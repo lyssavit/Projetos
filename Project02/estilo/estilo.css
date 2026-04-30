@@ -6,6 +6,11 @@
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: "Passion One", sans-serif;
     --font3: 'Patrick Hand', cursive;
+
+    --cor1: #3D3122 ;
+    --cor2: #fff0c7;
+    --cor3: #fff8e0;
+    --cor4: #180b00;
 }
 
 
@@ -25,14 +30,14 @@ html, body{
 }
 
 header{
-    background-color: black;
-    color: white;
+    background-color: var(--cor1);
+    color: #ffffff;
     text-align: center;
     
 }
 
 header > h1{
-    color: white;
+    color: var(--cor2);
     padding-top: 50px ;
     font-variant: small-caps;
     font-family: var(--font2);
@@ -40,14 +45,14 @@ header > h1{
 }
 
 header > p{
-    color: white;
+    color: var(--cor2);
     padding: 50px;
 }
 
 header a, footer a{
     text-decoration: none;
     font-weight: bolder;
-    color: white;
+    color: var(--cor2);
 }
 
 header a:hover, footer a:hover{
@@ -64,25 +69,32 @@ section{
     font-size: 3vw;
 }
 
+section > p {
+    padding-bottom:1.5em ;
+}
+
 section.normal{
-    background-color: white;
-    color: black;
+    background-color: var(--cor3);
+    color: var(--cor4);
 }
 
 section.imagem{
     background-color: black;
-    color: white;
+    color: var(--cor3);
+    box-shadow: inset 3px 0px 6px var(--cor1);
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: #33220070;
     padding: 20px;
     display: inline-block;
     text-align: left;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.315);
+    
 }
 
 section#img1{
-    background:#5c5c5cf3 url(/Project02/imagens/background001.jpg) center center / cover no-repeat fixed;
+    background:#5c5c5cf3 url(/Project02/imagens/terra.png) right top / cover no-repeat fixed;
     
 }
 
@@ -91,11 +103,13 @@ section#img2{
 }
 
 footer{
-    background-color: black;
+    background-color: var(--cor1);
     padding: 5px;
-    text-align: center
+    text-align: center;
+    font-size: 12px;
+    
 }
 
 footer p {
-    color: white;
+    color: var(--cor2);
 }
